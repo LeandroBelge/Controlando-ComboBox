@@ -10,6 +10,8 @@ type
   TUIPrincipal = class(TForm)
     CboTextoNormal: TComboBox;
     CboTextoMaior: TComboBox;
+    Label1: TLabel;
+    Label2: TLabel;
   private
     { Private declarations }
   public

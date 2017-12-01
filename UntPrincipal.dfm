@@ -3,8 +3,8 @@ object UIPrincipal: TUIPrincipal
   Top = 0
   BorderIcons = [biSystemMenu]
   Caption = 'Controlando Combo Box'
-  ClientHeight = 201
-  ClientWidth = 447
+  ClientHeight = 110
+  ClientWidth = 292
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -12,15 +12,30 @@ object UIPrincipal: TUIPrincipal
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poMainFormCenter
   PixelsPerInch = 96
   TextHeight = 13
+  object Label1: TLabel
+    Left = 9
+    Top = 19
+    Width = 113
+    Height = 13
+    Caption = 'Itens com texto curtos:'
+  end
+  object Label2: TLabel
+    Left = 8
+    Top = 67
+    Width = 114
+    Height = 13
+    Caption = 'Itens com texto longos:'
+  end
   object CboTextoNormal: TComboBox
-    Left = 152
-    Top = 40
+    Left = 128
+    Top = 16
     Width = 145
     Height = 21
+    Style = csDropDownList
     TabOrder = 0
-    Text = 'Texto normal'
     Items.Strings = (
       'Texto normal'
       'Texto pequeno'
@@ -28,12 +43,12 @@ object UIPrincipal: TUIPrincipal
       'Pequeno texto')
   end
   object CboTextoMaior: TComboBox
-    Left = 152
-    Top = 88
+    Left = 128
+    Top = 64
     Width = 145
     Height = 21
+    Style = csDropDownList
     TabOrder = 1
-    Text = 'Texto maior que o tamanho do combo'
     Items.Strings = (
       'Texto maior que o tamanho do combo'
       'Texto com muitas informa'#231#245'es para o combo'
